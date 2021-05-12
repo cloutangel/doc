@@ -170,13 +170,15 @@ Result:
 
 ### Get address info and transactions belonging to it
 
-Retreive info about public key and transactions that belong to it. All transactions can be expanded. Balance is not 100% correct for now but we are working on it to fix.
+Retreive info about public key and transactions that belong to it. All transactions can be expanded. 
+
+**ATTENTION!** Balance is not 100% correct for now but we are working on it to fix. And *token* field is under development.
 
 | Param | Value |
 |-|-|
 | Path | /v1/address/get/:pubkey |
 | Method | GET |
-| Params | :pubkey is public key starting with BC1 |
+| Params | :pubkey is public key starting with BC1 or username starting with @ |
 | Result | Information about requested address and its transactions |
 
 Extra params:
