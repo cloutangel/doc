@@ -4,8 +4,24 @@ URL for requests – <https://api.cloutangel.com>. Your request should be JSON a
 
 ## Request format
 
+To make request to API you need to get API token. This token should be passed in header **X-API-Token**.
+
+You can request using 2 methods:
+
+- JSON request and POST
+- Normal URL request with GET and parameters
+
+But all responses are in JSON.
+
 ## Response format
 
+Each response has JSON format and following structure:
+
+```json
+[error, result]
+```
+
+Where **error** will be null on success or contain string represenation of error. And **result** contains mixed data of response and depends on requested method. In case of error this field contains extra data about error.
 
 ## Methods
 
